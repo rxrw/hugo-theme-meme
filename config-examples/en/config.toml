@@ -1365,13 +1365,13 @@ uglyURLs = false
 
 
     ######################################
-    # Enable Lunr Search
+    # Lunr search
 
-    # Note：Needs Turn On `SearchIndex` Output
-    # This option is used to compatible with original lunr search option, with higher priority
+    # Note: This requires SearchIndex
+    #       output to be enabled.
 
-    enableLunrSearch = false
-    # Note：https://lunrjs.com/
+    enableLunrSearch = true
+    # Note: https://lunrjs.com/
 
 
     ######################################
