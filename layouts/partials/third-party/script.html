@@ -32,8 +32,9 @@
     {{ end }}
 {{ end }}
 
-{{ if .Site.Params.enableMediumZoom }}
-    {{ if and (.Site.Params.enableMediumZoom) (not .Params.gallery) }}
+
+{{ if and (.Site.Params.enableMediumZoom) (not .Params.gallery) }}
+    {{ partial "third-party/medium-zoom.html" . }}
 {{ end }}
 
 {{ if .Site.Params.enableInstantPage }}
