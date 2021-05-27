@@ -1,7 +1,6 @@
 {{- $Content := partial "utils/markdownify.html" (dict "$" . "raw" .Content "isContent" true) -}}
 <!-- https://github.com/blueimp/Gallery -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/blueimp-gallery@3.3.0/css/blueimp-gallery.min.css">
-
 {{- if and (.Params.gallery) -}}
     <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" aria-label="image gallery"
     aria-modal="true" role="dialog">
